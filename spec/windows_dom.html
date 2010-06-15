@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="file:///c://dev/wraptastic.js/spec/lib/jspec.css" />
+		<script src="file:///c://dev/wraptastic.js/spec/lib/jspec.js"></script>
+		<script src="file:///c://dev/wraptastic.js/spec/lib/jspec.xhr.js"></script>
+    <script src="file:///c://dev/wraptastic.js/lib/underscore.js"></script>
+		<script src="file:///c://dev/wraptastic.js/lib/yourlib.js"></script>
+		<script src="file:///c://dev/wraptastic.js/spec/unit/spec.helper.js"></script>
+		<script>
+			function runSuites() {
+				JSpec
+				.exec('unit/spec.js')
+				.run({ fixturePath: 'fixtures' })
+				.report()
+			}
+		</script>
+	</head>
+	<body class="jspec" onLoad="runSuites();">
+		<div id="jspec-top"><h2 id="jspec-title">JSpec <em><script>document.write(JSpec.version)</script></em></h2></div>
+		<div id="jspec"></div>
+		<div id="jspec-bottom"></div>
+	</body>
+</html>
